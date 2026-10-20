@@ -137,6 +137,8 @@ def traiter_arguments():
 
 
 if __name__ == "__main__":
-    dec = traiter_arguments()
+    #dec = traiter_arguments()
     s1 = lire_stdin()
-    print(chiffrer(s1,dec), end="")
+    for dec in range(26):
+        print(dec)
+        print(chiffrer(s1,dec))
